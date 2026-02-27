@@ -1,0 +1,73 @@
+body {
+    font-family: sans-serif;
+    background-color: #002966;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box {
+    background-color: #001433;
+    color: white;
+    padding: 20px;
+    border-radius:2rem;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin: 20px 0;
+}
+
+@media (min-width: 500px) {
+    .grid {
+        grid-template-columns: repeat(15, 1fr);
+    }
+}
+
+.cell {
+    display: flex;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: center;
+    background-color: #A9BCD0;
+    color: black;
+    font-weight: bold;
+    border-radius: 0.15rem;
+}
+
+.picked {
+    background-color: #0066ff;
+    color: white;
+}
+
+.hit {
+    background-color: #22c55e;
+    color: white;
+}
+
+.miss {
+    background-color: #ef4444;
+    color: white;
+}
+
+.drawn {
+    background-color: #facc15;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}

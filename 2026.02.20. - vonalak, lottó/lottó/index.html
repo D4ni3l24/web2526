@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szuper Lottó Program</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <div class="box">
+        <h1>Lottó Játék</h1>
+
+        <!-- Menü nézet -->
+        <div id="menu-view">
+            <button id="add-lotto-5">5-ös lottó (5/90)</button>
+            <button id="add-lotto-6">6-os lottó (6/45)</button>
+        </div>
+
+        <!-- Játék nézet -->
+        <div id="game-view" class="hidden">
+            <h2 id="game-title"></h2>
+            <p id="game-status"></p>
+            <div id="lotto-grid" class="grid"></div>
+            
+            <div class="actions">
+                <button id="run-sorsolas" >Sorsolás</button>
+                <button id="reset-all">Vissza a menübe</button>
+            </div>
+            
+            <h3 id="game-result"></h3>
+        </div>
+    </div>
+</body>
+</html>

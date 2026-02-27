@@ -1,0 +1,29 @@
+:root{
+    --line: #cfcfcf;
+    --bg: #f7f8fa;
+    --card: #fff;
+    --accent: #2563eb;
+    --line-size: 30px;
+    --space: 12px;
+    --font-family: system-ui, -apple-system, "segoe UI", roboto, Arial
+}
+
+body{
+    background-color: var(--bg);
+    font-family: var(--font-family);
+    color: #222;
+    margin: 0;
+    padding: 20px;
+}
+main{
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#answers span {
+    font-weight: bold;
+    color: var(--accent);
+    margin-left: 1rem;
+    font-family: 'Courier New', monospace;
+}
